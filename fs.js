@@ -5,8 +5,12 @@ const fs = require('node:fs');
 
 fs.readdir('./', function (err, files) {
     if (err) console.log('The errror :', err);
-    else console.log('Showing: ', files);
-});
+    else {
+        files.forEach(file => {
+            console.log(file);
+        });
+    }
+})
 
 //console.log(myFiles);
 //console.log(asyncFiles);
