@@ -1,3 +1,5 @@
-const logger = require('./logger');
+function hello(name) {
+    console.log('Hello ' + name);
+}
 
-logger('my modules');
+console.log(hello('Arthur'));
