@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+    <button onclick="
+        const randomNumber = Math.random()
+        let computerPick = ''
+        if(randomNumber >= 0 && randomNumber < 1 / 3){
+            computerPick = 'Rock'
+        }
+        else if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+            computerPick = 'Paper'
+        }
+        else if(randomNumber >= 2 / 3 && randomNumber < 1){
+            computerPick = 'Scissors'
+        }
+
+        let result = ''
+        if(computerPick === 'Rock'){
+            result = 'its a tie'
+        }
+        else if(computerPick === 'Paper'){
+            result = 'You loose'
+        }
+        else if(computerPick === 'Scissors'){
+            result = 'You win'
+        }
+
+        alert(`You picked Rock. Computer picked ${computerPick}. ${result}`)
+    ">Rock</button>
+
+    <button onclick="
+        randomNumber = Math.random()
+        computerPick = ''
+        if(randomNumber >= 0 && randomNumber < 1 / 3){
+            computerPick = 'Rock'
+        }
+        else if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+            computerPick = 'Paper'
+        }
+        else if(randomNumber >= 2 / 3 && randomNumber < 1){
+            computerPick = 'Scissors'
+        }
+
+        result = ''
+        if(computerPick === 'Rock'){
+            result = 'You win'
+        }
+        else if(computerPick === 'Paper'){
+            result = 'Its a tie'
+        }
+        else if(computerPick === 'Scissors'){
+            result = 'You loose'
+        }
+
+        alert(`You picked Paper. Computer picked ${computerPick}. ${result}`)
+    ">Paper</button>
+    <button onclick="
+        randomNumber = Math.random()
+        computerPick = ''
+        if(randomNumber >= 0 && randomNumber < 1 / 3){
+            computerPick = 'Rock'
+        }
+        else if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+            computerPick = 'Paper'
+        }
+        else if(randomNumber >= 2 / 3 && randomNumber < 1){
+            computerPick = 'Scissors'
+        }
+
+        result = ''
+        if(computerPick === 'Rock'){
+            result = 'You loose'
+        }
+        else if(computerPick === 'Paper'){
+            result = 'You win'
+        }
+        else if(computerPick === 'Scissors'){
+            result = 'Its a tie'
+        }
+
+        alert(`You picked Scissors. Computer picked ${computerPick}. ${result}`)
+    ">Scissors</button>
+</body>
+</html>
